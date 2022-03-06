@@ -194,4 +194,24 @@ td {
     font-weight: 900;
     font-size: 1vw;
 }
+.btm-image{
+    margin-top: auto;
+    position: absolute;
+    margin-left: -7%;
+   
+}
 
+.login {
+    width: 100%;
+    padding: 3%;
+    background: rgb(87, 102, 218);
+    color: hsl(0 0 100);
+    border: none;
+    border-radius: 30px;
+    font-weight: 900;
+    text-align: center;
+    cursor: pointer;
+}
+.login:hover {
+    background-color: rgb(30, 89, 167);
+  }
