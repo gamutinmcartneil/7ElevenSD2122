@@ -8,7 +8,7 @@
 </head>
 <body>
     <img src="../assets/img/layouts.jpg" style="width:100%" >
- 
+
     link:
 
     <li>https://www.codeply.com/p/44bz8AG2EO</li>

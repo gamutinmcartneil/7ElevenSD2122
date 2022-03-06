@@ -46,21 +46,25 @@
         <span class="bar"></span>
       </button>
       <div class="collapse navbar-collapse" id="nav">
-        <ul class="navbar-nav bg-light m-0 mx-lg-auto p-lg-0">
+        <ul class="navbar-nav bg-light m-0 mx-lg-auto p-3 p-lg-0">
+
           <li class="d-inline d-lg-none">
             <button data-toggle="collapse" data-target="#nav" class="close float-right">&times;</button>
           </li>
-          <<li class="nav-item dropdown" style="margin-left: 20px;">
+
+          <li class="nav-item dropdown" style="margin-left: 20px;">
             <a id="navbar-btn-1" href="#" class="nav-link">Praesentium</a>
           </li>
           <li class="nav-item dropdown" style="margin-left: 20px;">
             <a class="nav-link" href="#">Voluptatum</a>
           </li>
           <li class="nav-item dropdown" style="margin-left: 20px;">
-          <a class="nav-link" href="#"> Dignissimos </a>
+            <a class="nav-link" href="#"> Dignissimos </a>
+
           </li>
           <li class="nav-item dropdown" style="margin-left: 20px;">
             <a class="nav-link" href="#"> Blanditiis </a>
+
           </li>
         </ul>
       </div>
@@ -120,39 +124,58 @@
   </main>
 
 
-  <footer class="mt-5 text-bottom">
-    <table>
-      <tr>
-        <th>SUSPENDISSE</th>
-        <th>PORTA</th>
-        <th>FEUGIAT</th>
-        <th>PLACERAT </th>
-      </tr>
-      <tr>
-        <td>Quisque</td>
-        <td>Mauris</td>
-        <td>Pellentesque</td>
-        <td>Vitae</td>
-      </tr>
-      <tr>
-        <td>Faucibus</td>
-        <td>Suscipit</td>
-        <td>Accumsan</td>
-        <td>Convallis  </td>
-      </tr>
-      <tr>
-        <td> Sapien </td>
-        <td>At ipsum</td>
-        <td>Velit in urna</td>
-        <td>Augue </td>
-      </tr>
-      <tr>
-        <td> Hendrerit</td>
-        <td>Vehicula</td>
-        <td>Faucibus </td>
-        <td>Aliquam</td>
-      </tr>
-    </table>
+  <footer class="mt-5 text-center">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm">
+          <ul>
+            <li>SUSPENDISSE</li>
+            <li> Quisque</li>
+            <li>Faucibus</li>
+            <li>Sapien</li>
+            <li>Hendrerit</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm">
+          <ul>
+            <li>PORTA</li>
+            <li> Mauris</li>
+            <li>Suscipit</li>
+            <li>At ipsum</li>
+            <li>Vehicula</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm">
+          <ul>
+            <li>FEUGIAT</li>
+            <li> Pellentesque </li>
+            <li>Accumsan</li>
+            <li>Velit in urna</li>
+            <li>Faucibus</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm">
+          <ul>
+            <li>PLACERAT</li>
+            <li> Vitae</li>
+            <li>Convallis</li>
+            <li>Augue</li>
+            <li>Aliquam</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="assets/js/index.js"></script>
