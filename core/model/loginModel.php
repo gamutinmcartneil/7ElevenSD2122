@@ -46,10 +46,12 @@ class LoginModel extends Dbh {
             }
 
            else{
+            date_default_timezone_set("Asian/Taipei");
              $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
              session_start();
              $_SESSION["userid"] = $user[0]["users_id"];
              $_SESSION["username"] = $user[0]["users_name"];
+             $_SESSION["usermail"] = $user[0]["users_email"];
              $_SESSION['auth'] = true;
              $_SESSION['start'] = time();
              $_SESSION['expire'] = $_SESSION['start'] + (1 * 60);

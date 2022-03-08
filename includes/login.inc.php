@@ -15,6 +15,8 @@ if(isset($_POST["submit"])){
 
     print $login->loginUser();
 
+   //going to back to front page
+   header("location: ../dashboard.php");
     
 
 }

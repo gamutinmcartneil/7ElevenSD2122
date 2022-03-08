@@ -83,7 +83,7 @@
         <div class="div-center">
 
           <div class="content">
-            <form action="includes/signup.inc.php" method="post">
+            <form action="includes/login.inc.php" method="post">
 
              
               <div class="form-group">
