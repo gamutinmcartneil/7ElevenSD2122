@@ -1,0 +1,22 @@
+.sidebar{
+    background-color: green;
+}
+.sidebar-brand-logo{
+    border: 3px solid #fff;
+}
+
+.navbar-nav > .nav-item  > .nav-link, .fa-table{
+    color: #fff;
+}
+
+.sidebar-toggler button{
+    background-color: #fff;
+}
+i{
+    color:#000;
+}
+
+.topbar .dropdown-list .dropdown-header{
+    background-color: green;
+    border: 1px solid green;
+}
