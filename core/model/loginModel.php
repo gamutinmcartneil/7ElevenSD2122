@@ -12,6 +12,12 @@ class LoginModel extends Dbh {
             exit();
         }
 
+        if($pwd == false){
+            $stmt = null;
+            header("location: ../login.php?error=wrongpassword");
+            exit();
+        }
+
         if($stmt->rowCount() != 0){
             $stmt = null;
             header("location: ../login.php?error=usernotfound");
@@ -20,16 +26,9 @@ class LoginModel extends Dbh {
         
         // $pwdHashed = $stmt->fetchAll(PDO::FETCH_ASSOC);
         // $checkPwd = password_verify($pwd, $pwdHashed[0]["users_pwd"]);
-        $checkPwd = $pwd;
+        //$checkPwd = $pwd;
 
-        if($checkPwd == false){
-            $stmt = null;
-            header("location: ../login.php?error=wrongpassword");
-            echo "<p>Password</p>";
-            exit();
-        }
-
-        elseif($checkPwd == true){
+        elseif($pwd == true){
             $stmt = $this->connect()->prepare('SELECT * FROM users WHERE users_name = ? or users_email = ? AND users_pwd = ?');
 
             if(!$stmt->execute(array($email, $email, $pwd))){
@@ -41,7 +40,6 @@ class LoginModel extends Dbh {
             if($stmt->rowCount() == 0){
                 $stmt = null;
                 header("location: ../login.php?error=usersnotfound");
-                $this->errMsg();
                 exit();
             }
 
@@ -63,9 +61,6 @@ class LoginModel extends Dbh {
         $stmt = null;
     }
 
-    public function errMsg()
-    {
-        echo "okay na!!!";
-    }
+
     
 }

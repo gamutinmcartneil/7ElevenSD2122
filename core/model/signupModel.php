@@ -27,6 +27,7 @@ class SignupModel extends Dbh {
         if (!$stmt->execute(array($name, $email))) {
             $stmt = null;
             header("location: ../500.php?error=stmtfailed");
+            
             exit();
         }
         $resultCheck = '';

@@ -166,7 +166,7 @@
   </footer>
 
   <script src="assets/js/index.js"></script>
-  <script src="assets/js/err.js"></script>
+  
 
 </body>
 
