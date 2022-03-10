@@ -101,7 +101,7 @@
                 <div style="float:right;"><label>No account yet? <a href="registration.php">Sign up</a></label></div>
               </div>
               
-              <div><button type="submit" name="submit" class="login">Login</button></div>
+              <div><button type="submit" name="submit" class="login btn btn-primary">Login</button></div>
               
               
             </form>
@@ -151,7 +151,7 @@
   </footer>
 
   <script src="assets/js/index.js"></script>
-
+  <script src="assets/js/err.js"></script>
 </body>
 
 </html>

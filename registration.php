@@ -50,18 +50,18 @@
           <li class="d-inline d-lg-none">
             <button data-toggle="collapse" data-target="#nav" class="close float-right">&times;</button>
           </li>
-          <<li class="nav-item dropdown" style="margin-left: 20px;">
+          <li class="nav-item dropdown" style="margin-left: 20px;">
             <a id="navbar-btn-1" href="#" class="nav-link">Praesentium</a>
-          </li>
-          <li class="nav-item dropdown" style="margin-left: 20px;">
-            <a class="nav-link" href="#">Voluptatum</a>
-          </li>
-          <li class="nav-item dropdown" style="margin-left: 20px;">
-          <a class="nav-link" href="#"> Dignissimos </a>
-          </li>
-          <li class="nav-item dropdown" style="margin-left: 20px;">
-            <a class="nav-link" href="#"> Blanditiis </a>
-          </li>
+            </li>
+            <li class="nav-item dropdown" style="margin-left: 20px;">
+              <a class="nav-link" href="#">Voluptatum</a>
+            </li>
+            <li class="nav-item dropdown" style="margin-left: 20px;">
+              <a class="nav-link" href="#"> Dignissimos </a>
+            </li>
+            <li class="nav-item dropdown" style="margin-left: 20px;">
+              <a class="nav-link" href="#"> Blanditiis </a>
+            </li>
         </ul>
       </div>
     </nav>
@@ -79,7 +79,8 @@
         <div class="div-center">
 
           <div class="content">
-            <form action="includes/signup.inc.php" method="post">
+            <span class="err-msg"></span>
+            <form id="reg-form" action="includes/signup.inc.php" method="post">
 
               <div class="form-group">
                 <label for="exampleInputEmail1">Name</label>
@@ -104,14 +105,23 @@
                 </select>
               </div>
               <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Proin sit amet lectus venenatis, consectetur
-                  magna vitae, convallis diam. Nullam iaculis.</label>
+
+                <label class="form-check-label" for="exampleCheck1">
+                  <input type="checkbox" required name="allow_access" value="agree" class="form-check-input" id="exampleCheck1">
+
+                  Proin sit amet lectus venenatis, consectetur
+                  magna vitae, convallis diam. Nullam iaculis.
+
+                </label>
               </div>
-              <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+
+
+              <div><button id="submit" type="submit" name="submit" class="login btn btn-danger">Submit</button></div>
+
+
             </form>
 
-            <div><img src="assets/img/cards.png" alt="" style="width: 200px;"></div>
+            <div class="btm-image"><img src="assets/img/cards.png" alt="" style="width: 200px;"></div>
           </div>
           </span>
         </div>
@@ -138,7 +148,7 @@
         <td>Faucibus</td>
         <td>Suscipit</td>
         <td>Accumsan</td>
-        <td>Convallis  </td>
+        <td>Convallis </td>
       </tr>
       <tr>
         <td> Sapien </td>
@@ -156,6 +166,7 @@
   </footer>
 
   <script src="assets/js/index.js"></script>
+  <script src="assets/js/err.js"></script>
 
 </body>
 

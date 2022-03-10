@@ -29,6 +29,7 @@ footer {
     color: #fff;
     background-color: rgb(1, 106, 65);
     padding: 25px;
+    width: 100%;
 }
 
 .header-logo-group>div {
@@ -97,9 +98,13 @@ footer {
         font-style: bold;
         margin: 25 290 0 270;
     }
+    main{
+        margin-bottom: 10%;
+    }
     footer {
         color: #fff;
         background-color: rgb(1, 106, 65);
+        
     }
     .header-logo-group>div>img {
         width: 50%;
@@ -138,6 +143,9 @@ footer {
     .header-logo-group>div>img {
         width: 70%;
         margin-left: 10%;
+    }
+    main{
+        margin-bottom: 35%;
     }
 }
 .text-center{
@@ -180,6 +188,7 @@ table {
 
 
   }
+  
   
 th{
     padding-left: 100px;

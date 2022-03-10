@@ -26,7 +26,7 @@ class signupController extends SignupModel {
         }
     
         if($this->invalidName() == false){
-         header("location: ../registration.php?error=username");
+         header("location: ../registration.php?error=name");
          exit();
         }
     
