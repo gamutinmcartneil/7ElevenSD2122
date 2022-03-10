@@ -82,20 +82,20 @@
             <span class="err-msg"></span>
             <form id="reg-form" action="includes/signup.inc.php" method="post">
 
-              <div class="form-group">
+              <div class="form-group mt-3">
                 <label for="exampleInputEmail1">Name</label>
                 <input name="name" type="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               </div>
-              <div class="form-group">
+              <div class="form-group mt-3">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
               </div>
-              <div class="form-group">
+              <div class="form-group mt-3">
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" name="pwd" class="form-control" id="exampleInputPassword1">
               </div>
-              <div class="form-group">
+              <div class="form-group  mt-3">
                 <span class="my-2">Birthdate</span>
                 <select id="inputStateMonth" name="mm" class="form-select" aria-label="Default select" style="overflow-y: scroll;" onchange="change_month(this)">
                 </select>
@@ -116,7 +116,7 @@
               </div>
 
 
-              <div><button id="submit" type="submit" name="submit" class="login btn btn-danger">Submit</button></div>
+              <div class="mt-3"><button id="submit" type="submit" name="submit" class="login btn btn-danger">Submit</button></div>
 
 
             </form>

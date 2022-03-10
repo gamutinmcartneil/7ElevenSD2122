@@ -1,7 +1,5 @@
 <?php
 
-
-
 if (isset($_POST["submit"])) {
 
     if (isset($_POST['allow_access']) && $_POST['allow_access'] == 'agree') {
@@ -21,7 +19,7 @@ if (isset($_POST["submit"])) {
 
         // running error ghandler and user signup
          $signup->signupUser();
-         
+
         //going to back to front page
         header("location: ../login.php");
 

@@ -20,7 +20,7 @@ private $pwd;
     public function loginUser(){
 
         if($this->emptyInput() == false){
-            header("location: ../404.php?error=emptyinput");
+            header("location: ../500.php?error=emptyinput");
             exit();
     }
         else{
